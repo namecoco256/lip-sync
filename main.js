@@ -1,9 +1,9 @@
-var matsu = new Audio("sounds/matsukensamba.wav");
+var matsu = new Audio("sounds/matsukensamba.mp3");
 
 function sound()
 {
   // [ID:sound-file]の音声ファイルを再生[play()]する
-  document.getElementById( 'sounds/matsukensamba.wav' ).play() ;
+  document.getElementById( 'sounds/matsukensamba.mp3' ).play() ;
 }
 
 ball.onmousedown = function(event) {

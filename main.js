@@ -19,7 +19,7 @@ ball.onmousedown = function(event) {
   
     moveAt(event.pageX, event.pageY);
   
-    // ボールを（pageX、pageY）座標の中心に置く
+    // 口を（pageX、pageY）座標の中心に置く
     function moveAt(pageX, pageY) {
       ball.style.left = pageX - shiftX + 'px';
       ball.style.top = pageY - shiftY + 'px';
@@ -33,7 +33,7 @@ ball.onmousedown = function(event) {
     document.addEventListener('mousemove', onMouseMove);
     matsu.play();
 
-    // ボールをドロップする。不要なハンドラを削除する
+    // 口をドロップする。不要なハンドラを削除する
     ball.onmouseup = function() {
       document.removeEventListener('mousemove', onMouseMove);
       ball.onmouseup = null;
